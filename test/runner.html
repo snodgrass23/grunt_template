@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner</title>
+
+  <link rel="stylesheet" href="lib/jasmine-core/jasmine.css">
+  <link rel="stylesheet" href="lib/jasmine-bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="lib/jasmine-bootstrap/jasmine-bootstrap.css">
+  <link rel="stylesheet" href="runner.css">
+</head>
+
+<body>
+  <div id="fixture"></div>
+
+  <!-- 3rd Party Dependencies -->
+  <script src="../public/js/vendor/jquery-2.0.0.js"></script>
+  <script src="../public/js/vendor/jquery.iframe.js"></script>
+  <script src="../public/js/vendor/colours.js"></script>
+  <script src="../public/js/vendor/keymaster.min.js"></script>
+  <script src="../public/js/vendor/underscore-min.js"></script>
+  <script src="../public/js/vendor/uuid-v4.min.js"></script>
+
+  <script src="lib/jasmine-core/jasmine.js"></script>
+  <script src="lib/jasmine-core/jasmine-html.js"></script>
+  <script src="lib/jasmine-core/jasmine.junit-reporter.js"></script>
+  <script src="lib/jasmine-extensions/jasmine-matchers.js"></script>
+  <script src="lib/jasmine-extensions/jasmine.compare-reporter.js"></script>
+  <script src="lib/jasmine-extensions/jasmine.helper.js"></script>
+  <script src="lib/jasmine-bootstrap/jasmine-bootstrap.js"></script>
+
+  <script src="lib/jasmine-console/console-runner.js"></script>
+  <script src="lib/jasmine-extensions/jasmine.compare-reporter.js"></script>
+  <script src="lib/jasmine-extensions/jasmine-matchers.js"></script>
+
+  <script src="utils/fixtures.js"></script>
+  <script src="utils/instantiators.js"></script>
+
+  <script src="./../public/js/lib/shortcuts.js"></script>
+  <script src="./../public/js/mixin/chainable.js"></script>
+  <script src="./../public/js/mixin/identifiable.js"></script>
+  <script src="./../public/js/mixin/injectable.js"></script>
+  <script src="./../public/js/mixin/observable.js"></script>
+  <script src="./../public/js/mixin/renderable.js"></script>
+  <script src="./../public/js/mixin/stateful.js"></script>
+  <script src="./../public/js/mixin/styleable.js"></script>
+  <script src="./../public/js/mixin/templateable.js"></script>
+
+  <!-- Untested dependencies -->
+  <script src="./../public/js/environment/stage.js"></script>
+
+  <!-- All the tested dependencies -->
+  <script src="./../public/js/model/order.js"></script>
+  <script src="./../public/js/ui/store.js"></script>
+
+  <!-- All the tests -->
+  <!--Lots of dependencies in here. Need to clean that up with some mocks or isolate it to test-->
+  <!--<script src="./order-model-spec.js"></script>-->
+  <script src="./store-spec.js"></script>
+
+  <!-- Kick off the tests -->
+  <script src="./runner.js"></script>
+</body>
+</html>
+

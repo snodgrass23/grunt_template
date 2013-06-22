@@ -1,0 +1,11 @@
+#modals {
+  display: none;
+}
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+  width: auto;
+  margin: 8px 5%;
+}
+
+.finished-at {
+  font-size: 0.8em;
+}
