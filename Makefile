@@ -37,6 +37,8 @@ build:
 deploy: build github-pages
 
 github-pages:
+	@git add dist/.
+	@git commit -m "dist build"
 	@git subtree push --prefix dist origin gh-pages
 
 todo:
