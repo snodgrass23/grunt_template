@@ -22,6 +22,7 @@ module.exports =
   options:
     data:
       minJs: true
+      appScripts: '<%= pkg.appScripts %>'
       __ENV__: '<%= envTarget() %>'
       version: '<%= pkg.version %>'
 
@@ -42,6 +43,7 @@ module.exports =
     options:
       data:
         minJs: false
+        appScripts: '<%= pkg.appScripts %>'
         __ENV__: 'development'
         version: '<%= pkg.version %>'
         debug: false

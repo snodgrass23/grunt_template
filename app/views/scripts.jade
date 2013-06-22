@@ -1,0 +1,8 @@
+if minJs
+  script(src='_assets/#{ version }/scripts/libs.js')
+  script(src='_assets/#{ version }/scripts/main.js')
+else
+  script(src='components/jquery/jquery.js')
+  script(src='components/lodash/dist/lodash.underscore.js')
+  each c in appScripts
+    script(src=c.replace("app/", ""))

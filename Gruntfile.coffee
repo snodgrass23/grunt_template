@@ -76,6 +76,16 @@ module.exports = (grunt) ->
 
     grunt.task.run(localTasks)
 
+
+  grunt.registerTask('build:testing', [
+    'clean:dist',
+    'bower',
+    'stylus:compile',
+    "jade:testing",
+    'uglify:dist',
+    'copy:dist'
+  ])
+
   grunt.registerTask('default', [
     # 'jshint',
     # 'test',

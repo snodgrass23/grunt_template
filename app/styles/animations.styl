@@ -1,0 +1,30 @@
+.slide-enter-setup,
+.slide-leave-setup,
+.slide-move-setup
+  transition .15s linear all
+  position relative
+
+.slide-enter-setup
+  left -10px
+  opacity 0
+
+.slide-enter-setup.slide-enter-start
+  left 0
+  opacity 1
+
+
+.slide-leave-setup
+  left 0
+  opacity 1
+
+.slide-leave-setup.slide-leave-start
+  left -10px
+  opacity 0
+
+
+.slide-move-setup
+  opacity 0.5
+
+.slide-move-setup.slide-move-start
+  opacity 1
+
