@@ -1,7 +1,7 @@
 module.exports =
-  compass:
-    files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}']
-    tasks: ['compass']
+  stylus:
+    files: ['<%= yeoman.app %>/styles/{,*/}*.styl']
+    tasks: ['stylus:compile']
   jade:
     files: ['<%= yeoman.app %>/{,*/}*.jade'],
     tasks: ['jade:compile']
