@@ -27,15 +27,7 @@ module.exports =
       version: '<%= pkg.version %>'
 
   #testing target
-  testing:
-    files: '<%= jade.dist_files %>'
-
-  #staging target
-  staging:
-    files: '<%= jade.dist_files %>'
-
-  #production target
-  production:
+  dist:
     files: '<%= jade.dist_files %>'
 
   # local target used with grun server

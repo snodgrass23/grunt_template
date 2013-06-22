@@ -34,6 +34,11 @@ jshint:
 build:
 	@grunt build
 
+deploy: build github-pages
+
+github-pages:
+	@git subtree push --prefix dist origin gh-pages
+
 todo:
 	@git grep -i -A 3 TODO
 

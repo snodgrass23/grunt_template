@@ -77,11 +77,11 @@ module.exports = (grunt) ->
     grunt.task.run(localTasks)
 
 
-  grunt.registerTask('build:testing', [
+  grunt.registerTask('build', [
     'clean:dist',
     'bower',
-    'stylus:compile',
-    "jade:testing",
+    'stylus:dist',
+    "jade:dist",
     'uglify:dist',
     'copy:dist'
   ])
@@ -89,5 +89,5 @@ module.exports = (grunt) ->
   grunt.registerTask('default', [
     # 'jshint',
     # 'test',
-    'build:testing'
+    'build'
   ])

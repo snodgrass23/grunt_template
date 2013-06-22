@@ -14,6 +14,6 @@ module.exports =
       # get array of app files from package.json file
       # needs to be array instead of search string because files
       # need to be loaded in order
-      src: "<%= pkg.scripts %>"
+      src: "<%= pkg.appScripts %>"
       dest: '<%= yeoman.dist %>/scripts/main.js'
     }]
